@@ -1,0 +1,46 @@
+@charset "utf-8";
+.footer {
+  position: relative;
+  display: block;
+  background-color: #222;
+  padding: 60px 0;
+}
+.footer .inner {
+}
+.footer-list {
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+.footer-list li{
+    padding: 5px 0;
+}
+.footer-list li a{
+    color: #666;
+}
+.footer-list li a:hover{
+color: #b5b4b4;
+text-decoration: underline;
+}
+.footer-list p{
+    padding-top: 20px;
+}
+.footer-bar{
+    position: relative;
+    display: inline-block;
+    padding: 0 18px;
+}
+.footer-bar::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+}
+
+@media screen and (max-width: 640px){
+    
+}

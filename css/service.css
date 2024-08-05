@@ -1,0 +1,203 @@
+@charset "utf-8";
+.service {
+  position: relative;
+  display: block;
+  height: 100vh;
+  min-height: 800px;
+  padding: 180px 0 210px;
+  /* background-color: aqua; */
+}
+.servicev .inner {
+  height: 100%;
+}
+.service-title {
+  font-family: "Godo", "notokr";
+  margin-bottom: 30px;
+  font-size: 38px;
+  text-align: center;
+}
+.service-title span {
+  color: #3a68b2;
+}
+.service-wrap {
+  width: calc(100% - 20px * 2);
+  margin: 0 auto;
+  max-width: 1420px;
+  /* background-color: chartreuse; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+}
+.service-box-1 {
+  display: block;
+  position: relative;
+  max-height: 680px;
+  height: 47.88vw;
+  /* background-color: antiquewhite; */
+
+  grid-row: 1/3;
+  overflow: hidden;
+}
+.service-box-1:hover .service-bg {
+  transform: rotate(2deg) scale(1.1);
+  opacity: 0.7;
+}
+.service-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.service-bg-1 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../images/main_service_img1.jpg") no-repeat center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.service-box-2 {
+  position: relative;
+  overflow: hidden;
+}
+.service-bg-2 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../images/main_service_img2.jpg") no-repeat center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.service-box-2:hover .service-bg {
+  transform: rotate(2deg) scale(1.1);
+  opacity: 0.9;
+}
+.service-box-3 {
+  position: relative;
+  overflow: hidden;
+}
+.service-box-3:hover .service-bg {
+  transform: rotate(2deg) scale(1.1);
+  opacity: 0.9;
+}
+
+.service-bg-3 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../images/main_service_img3.jpg") no-repeat center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.service-wrap a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  display: grid;
+  padding: 30px;
+}
+.service-box-wrap {
+  position: relative;
+  justify-self: start;
+  align-self: end;
+  color: #fff;
+}
+.service-box-title {
+  position: relative;
+  font-size: 2.6rem;
+  margin-bottom: 3px;
+}
+.service-box-desc {
+  font-size: 1.7rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+.no-br {
+  display: none;
+}
+.service-box-bt {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 140px;
+  height: 40px;
+  padding: 0 15px 0 20px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+.service-box-bt i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* 반응형 */
+@media screen and (max-width: 1240px) {
+  .service {
+    height: auto;
+    padding: 100px 0 80px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .service-title {
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  .service-wrap {
+    grid-template-columns: 1fr;
+  }
+  .service-box-1 {
+    justify-self: center;
+    width: 100%;
+    max-width: 640px;
+    height: 640px;
+  }
+  .service-box-2,
+  .service-box-3 {
+    justify-self: center;
+    width: 100%;
+    max-width: 640px;
+    height: 312px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .service {
+    padding: 60px 0 80px;
+  }
+  .service-box-1 {
+    height: 100vw;
+    max-height: 640px;
+  }
+  .service-box-2,
+  .service-box-3 {
+    height: 45vw;
+    max-height: 312px;
+  }
+
+  .service-wrap a {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .no-br {
+    display: block;
+  }
+  html{
+    font-size: 9px;
+  }
+  .service-box-wrap{
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 320px){
+    html{
+        font-size: 6px;
+    }
+}
